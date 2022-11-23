@@ -4,7 +4,8 @@ const req = axios.get("https://raw.githubusercontent.com/ibm-developer-skills-ne
 console.log(req);
 req.then(resp => {
     let courseDetails = resp.data;
-    console.log(JSON.stringify(courseDetails,null,4)) //stringify converts js to a json string 
+    console.log(JSON.stringify(courseDetails, null, 4))
+    //stringify converts js to a json string 
 })
 .catch(err => {
     console.log(err.toString())
